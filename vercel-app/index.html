@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#101722" />
+        <meta name="description" content="Browser-based Babylon.js development workspace." />
+        <title>AI Game Studio — Babylon.js Workspace</title>
+    </head>
+    <body>
+        <main class="workspace">
+            <header class="topbar">
+                <div class="brand"><span class="brand-mark">3D</span><div><strong>AI Game Studio</strong><small>Babylon.js workspace</small></div></div>
+                <span class="status"><i></i> Preview environment</span>
+            </header>
+            <section class="intro">
+                <p class="eyebrow">DEVELOPMENT WORKSPACE</p>
+                <h1>Your browser-based 3D workspace.</h1>
+                <p class="summary">A neutral starting point for AI-assisted development. The game concept and visual direction remain undecided.</p>
+            </section>
+            <section class="preview-panel" aria-label="3D engine preview">
+                <div class="panel-heading"><div><strong>3D runtime check</strong><small>Babylon.js engine initialization</small></div><span id="runtime-status" class="runtime-status">Starting…</span></div>
+                <canvas id="render-canvas" aria-label="3D preview canvas"></canvas>
+                <p id="runtime-message" class="runtime-message">Initializing the browser 3D runtime…</p>
+            </section>
+            <footer>Source-controlled with GitHub · Preview deployments with Vercel</footer>
+        </main>
+        <script type="module" src="/main.ts"></script>
+    </body>
+</html>
