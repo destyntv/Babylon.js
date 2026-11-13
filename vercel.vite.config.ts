@@ -1,11 +1,14 @@
 import { defineConfig } from "vite";
-import { resolve } from "node:path";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repositoryRoot = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-    root: resolve(__dirname, "vercel-app"),
+    root: resolve(repositoryRoot, "vercel-app"),
     base: "/",
     build: {
-        outDir: resolve(__dirname, "dist-vercel"),
+        outDir: resolve(repositoryRoot, "dist-vercel"),
         emptyOutDir: true,
     },
 });
